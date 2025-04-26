@@ -1,3 +1,81 @@
 body {
-    text-align: center;
+  text-align: center;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.header {
+  background: yellow;
+}
+
+.home {
+  display: none;
+}
+
+.single-player {
+  display: none;
+}
+
+.container {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: auto 1fr;
+  width: 100%;
+}
+
+.left-panel {
+  display: grid;
+  gap: 10px;
+  padding: 10px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  width: 300px;
+}
+
+.gameboard {
+  border: 1px solid gray;
+  border-radius: 5px;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+}
+
+.main-container {
+  display: grid;
+  gap: 20px;
+}
+
+.aircraft-carrier {
+  width: 200px;
+  height: 20px;
+  background: black;
+}
+
+.battleship {
+  width: 160px;
+  height: 20px;
+  background: black;
+}
+
+.cruiser {
+  width: 120px;
+  height: 20px;
+  background: black;
+}
+
+.submarine {
+  width: 120px;
+  height: 20px;
+  background: black;
+}
+
+.destroyer {
+  width: 80px;
+  height: 20px;
+  background: black;
+}
+
+.cell {
+  height: 50px;
+  width: 100%;
+  border: 1px solid black;
 }
