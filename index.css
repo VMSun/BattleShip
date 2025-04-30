@@ -1,11 +1,12 @@
 body {
+  background-color: #e0f8cf;
   text-align: center;
   padding-left: 20px;
   padding-right: 20px;
 }
 
 .header {
-  background: yellow;
+  background: rgb(209, 209, 178);
 }
 
 .home {
