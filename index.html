@@ -1,6 +1,13 @@
 <html>
   <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="index.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Battleship</title>
   </head>
 
@@ -20,11 +27,13 @@
       <h2>Place your Ships</h2>
       <div class="container">
         <div class="left-panel">
-          <div class="aircraft-carrier"></div>
-          <div class="battleship"></div>
-          <div class="cruiser"></div>
-          <div class="submarine"></div>
-          <div class="destroyer"></div>
+          <div draggable="true" class="ship aircraft-carrier">
+            Aircraft Carrier
+          </div>
+          <div draggable="true" class="ship battleship">Battleship</div>
+          <div draggable="true" class="ship cruiser">Cruiser</div>
+          <div draggable="true" class="ship submarine">Submarine</div>
+          <div draggable="true" class="ship destroyer">Destroyer</div>
         </div>
         <div class="gameboard">
           <div class="cell"></div>

@@ -3,6 +3,17 @@ body {
   text-align: center;
   padding-left: 20px;
   padding-right: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Press Start 2P", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+.press-start-2p-regular {
+  font-family: "Press Start 2P", system-ui;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .header {
@@ -18,10 +29,19 @@ body {
 }
 
 .container {
-  display: grid;
+  display: flex;
   gap: 20px;
-  grid-template-columns: auto 1fr;
   width: 100%;
+  box-sizing: border-box;
+}
+
+@media only screen and (max-width: 428px) {
+  .container {
+    flex-direction: column;
+  }
+  .container > * {
+    width: 100%;
+  }
 }
 
 .left-panel {
@@ -30,7 +50,6 @@ body {
   padding: 10px;
   border: 1px solid gray;
   border-radius: 5px;
-  width: 300px;
 }
 
 .gameboard {
@@ -38,16 +57,17 @@ body {
   border-radius: 5px;
   display: grid;
   grid-template-columns: repeat(10, 1fr);
+  width: 100%;
 }
 
 .main-container {
   display: grid;
   gap: 20px;
+  width: 100%;
 }
 
 .aircraft-carrier {
   width: 200px;
-  height: 20px;
   background: black;
 }
 
@@ -79,4 +99,20 @@ body {
   height: 50px;
   width: 100%;
   border: 1px solid black;
+}
+
+button {
+  font-family: "Press Start 2P", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.ship {
+  height: 20px;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
 }
